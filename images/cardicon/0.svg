@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 1023.9999 1024"
+   id="svg58"
+   sodipodi:docname="verband.svg"
+   width="1024"
+   height="1024"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:export-filename="verband.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview60"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.50006532"
+     inkscape:cx="525.93129"
+     inkscape:cy="610.92019"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg58"
+     inkscape:pageshadow="0" />
+  <defs
+     id="defs39">
+    <style
+       id="style2">
+      .cls-1 {
+        fill: #fccaa6;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        opacity: .3;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-3);
+        mix-blend-mode: multiply;
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient
+       id="linear-gradient"
+       x1="-781.78003"
+       y1="1086.83"
+       x2="-751.95001"
+       y2="1086.83"
+       gradientTransform="translate(1045.24,-676.84)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#faae6c"
+         id="stop4" />
+      <stop
+         offset=".35"
+         stop-color="#f6a96a"
+         id="stop6" />
+      <stop
+         offset=".73"
+         stop-color="#ec9d64"
+         id="stop8" />
+      <stop
+         offset="1"
+         stop-color="#e28f5e"
+         id="stop10" />
+    </linearGradient>
+    <linearGradient
+       id="linear-gradient-2"
+       x1="-751.95001"
+       y1="1086.83"
+       x2="-720.78003"
+       y2="1086.83"
+       gradientTransform="translate(1042.65,-689.14)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#e28f5e"
+         id="stop13" />
+      <stop
+         offset=".27"
+         stop-color="#ec9d64"
+         id="stop15" />
+      <stop
+         offset=".65"
+         stop-color="#f6a96a"
+         id="stop17" />
+      <stop
+         offset="1"
+         stop-color="#faae6c"
+         id="stop19" />
+    </linearGradient>
+    <linearGradient
+       id="linear-gradient-3"
+       x1="-751.95001"
+       y1="1086.83"
+       x2="-745.39001"
+       y2="1086.83"
+       gradientTransform="translate(1043.7,-684.18)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#bf7a4f"
+         id="stop22" />
+      <stop
+         offset=".07"
+         stop-color="#c78c66"
+         id="stop24" />
+      <stop
+         offset=".23"
+         stop-color="#d8ae94"
+         id="stop26" />
+      <stop
+         offset=".39"
+         stop-color="#e6cbbb"
+         id="stop28" />
+      <stop
+         offset=".55"
+         stop-color="#f1e2d8"
+         id="stop30" />
+      <stop
+         offset=".71"
+         stop-color="#f8f2ed"
+         id="stop32" />
+      <stop
+         offset=".86"
+         stop-color="#fdfbfa"
+         id="stop34" />
+      <stop
+         offset="1"
+         stop-color="#fff"
+         id="stop36" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter325"
+       x="-0.15596441"
+       y="-0.18275768"
+       width="1.3430087"
+       height="1.4019345">
+      <feFlood
+         flood-opacity="0.501961"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood315" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite317" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="4.6"
+         result="blur"
+         id="feGaussianBlur319" />
+      <feOffset
+         dx="2.2"
+         dy="2.2"
+         result="offset"
+         id="feOffset321" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite323" />
+    </filter>
+  </defs>
+  <!-- Generator: Adobe Illustrator 28.7.3, SVG Export Plug-In . SVG Version: 1.2.0 Build 164)  -->
+  <g
+     class="cls-3"
+     id="g56"
+     transform="matrix(14.079295,0,0,14.079295,-3611.6642,-5194.9892)">
+    <g
+       id="Layer_1">
+      <g
+         id="g53">
+        <rect
+           class="cls-1"
+           x="270.32001"
+           y="387.60999"
+           width="16.110001"
+           height="44.75"
+           transform="rotate(-23.78,278.40567,410.00966)"
+           id="rect41" />
+        <rect
+           class="cls-6"
+           x="263.45999"
+           y="388.89999"
+           width="29.83"
+           height="42.169998"
+           rx="4.3699999"
+           ry="4.3699999"
+           transform="rotate(-23.78,278.40567,410.00966)"
+           id="rect43"
+           style="fill:url(#linear-gradient)" />
+        <rect
+           class="cls-2"
+           x="290.70001"
+           y="378.76001"
+           width="31.17"
+           height="37.860001"
+           transform="rotate(-23.78,306.31661,397.70793)"
+           id="rect45"
+           style="fill:url(#linear-gradient-2)" />
+        <path
+           class="cls-4"
+           d="m 280.05,432.29 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 1.46,-0.64 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 1.45,-0.64 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 1.46,-0.64 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m -8.74,3.84 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 2.92,-1.28 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m -1.46,0.64 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 8.73,-3.85 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m -3.84,-44.23 16.89,38.33 c 0.17,-0.15 0.32,-0.31 0.44,-0.48 l -16.68,-37.86 c -0.21,-0.02 -0.43,-0.02 -0.65,0 z m 14.04,39.74 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 1.45,-0.64 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m -2.91,1.29 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m -20.54,8.61 c 0.21,0.02 0.43,0.02 0.65,0 l -16.89,-38.33 c -0.17,0.15 -0.32,0.31 -0.44,0.48 l 16.68,37.86 z m 17.63,-7.33 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m -2.91,1.28 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 1.45,-0.64 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m -2.91,1.28 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z m 5.82,-2.56 0.55,-0.24 -17.01,-38.59 -0.55,0.24 z"
+           id="path47" />
+        <path
+           class="cls-4"
+           d="m 309.12,417.13 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -1.46,0.64 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 2.91,-1.28 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -4.36,1.92 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 5.82,-2.57 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -11.56,5.1 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 1.37,-0.61 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 2.91,-1.28 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -1.46,0.64 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 21.84,-9.62 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -1.45,0.64 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -1.46,0.64 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -10.9,-36.57 15.27,34.65 0.55,-0.24 -15.27,-34.65 z m 9.44,37.21 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -7.28,3.21 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 1.46,-0.64 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 4.37,-1.92 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m -2.91,1.28 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z m 1.45,-0.64 0.55,-0.24 -15.27,-34.65 -0.55,0.24 z"
+           id="path49" />
+        <rect
+           class="cls-5"
+           x="291.73999"
+           y="383.72"
+           width="6.5599999"
+           height="37.860001"
+           transform="rotate(-23.78,295.05274,402.67711)"
+           id="rect51"
+           style="fill:url(#linear-gradient-3)" />
+      </g>
+    </g>
+  </g>
+</svg>

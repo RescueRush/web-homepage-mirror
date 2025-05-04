@@ -1,0 +1,445 @@
+
+<html lang="lb">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup -->
+    <!-- =================================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Homepage</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="description" content="Rescue Rush &#8226; dat spannend an interaktiivt Léierspill, wou s de op eng spilleresch Aart a Weis Éischt Hëllef léiere kanns!" />
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Rescue Rush &#8226; Spill, Léier, Rett" />
+    <meta property="og:description" content="Rescue Rush &#8226; dat spannend an interaktiivt Léierspill, wou s de op eng spilleresch Aart a Weis Éischt Hëllef léiere kanns!" />
+    <meta property="og:image" content="https://rescue-rush.lu/images/promotionals/OG_Banner.webp" />
+    <meta property="og:url" content="https://rescue-rush.lu/lu/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rescue Rush" />
+
+    <!-- SEO Google -->
+    <link rel="alternate" hreflang="de" href="https://rescue-rush.lu/de/" />
+    <link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+    <link rel="alternate" hreflang="en" href="https://rescue-rush.lu/en/" />
+    <link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+    <link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+    <link rel="canonical" href="https://rescue-rush.lu/lu/" />
+    <link rel="manifest" href="https://rescue-rush.lu/manifests/home/lu.json" />
+
+    <!-- =================================================================== -->
+    <!-- Background -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('../images/background/Background_Homepage.webp');
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="../prerequisites/InriaSans.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="../prerequisites/bootstrap.js"></script>
+    <link href="../styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="../styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="../styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="../styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Cursor.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Homepage.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Language.css">
+
+    <!--jQuery Scripts-->
+    <script src="../prerequisites/jquery.js"></script>
+
+    <!--Cursor Scripts-->
+    <script src="../script/ProjectSettings/Cursor/PS_Cursor.js"></script>
+    <script src="../script/ProjectSettings/Cursor/PS_CursorInteraction.js"></script>
+
+    <!--Cookies Scripts-->
+    <script src="../script/ProjectSettings/PS_LanguageSelector.js"></script>
+    <script src="../script/Util.js"></script>
+
+    <!--Pop-up Script-->
+    <script src="../script/PopupSender.js"></script>
+</head>
+
+<body>
+    <!-- =================================================================== -->
+    <!-- Custom Cursor -->
+    <!-- =================================================================== -->
+    <div id="custom-cursor"></div>
+
+    <!-- =================================================================== -->
+    <!-- Header -->
+    <!-- =================================================================== -->
+    <header class="header">
+        <div class="left-elements">
+            <a href="#main" id="scrolltotop" class="icon-link" title="Besicht Rescue Rush">
+                <img src="../images/Logo/I_LogoTransparentSquare.webp" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- Language Selector -->
+        <!-- =============================================================== -->
+        <div class="right-elements">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle">
+                    <img src="../images/Flags/I_WireframeGlobe.webp" alt="Dropdown Icon" class="dropdown-icon">
+                </label>
+                <div class="dropdown-content">
+                    <a href="../" data-lang="en">
+                        <img src="../images/Flags/S_Lang-EN.svg" alt="English">
+                        <p class="text4">English</p>
+                    </a>
+                    <a href="../lu/" data-lang="lu">
+                        <img src="../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                        <p class="text4">Lëtzebuergesch</p>
+                    </a>
+                    <a href="../fr/" data-lang="fr">
+                        <img src="../images/Flags/S_Lang-FR.svg" alt="Français">
+                        <p class="text4">Français</p>
+                    </a>
+                    <a href="../de/" data-lang="de">
+                        <img src="../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                        <p class="text4">Deutsch</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- Splashscreen -->
+    <!-- =================================================================== -->
+    <div id="home"></div>
+    <div class="content">
+        <div class="left-elements" id="splashscreen">
+            <p class="title">
+                SPILL LÉIER RETT
+            </p>
+            <div class="mobile">
+                <a href="#product">
+                    <button class="button1">
+                        <p>
+                            Brietspill kafen
+                        </p>
+                    </button>
+                </a>
+                <a href="#onlinegame">
+                    <button class="button1">
+                        <p>
+                            Online spillen
+                        </p>
+                    </button>
+                </a>
+            </div>
+            <p class="subtitle">
+                Rescue Rush – dat spannend an interaktiivt Léierspill, wou s de op eng spilleresch Aart a Weis Éischt
+                Hëllef léiere kanns!
+            </p>
+        </div>
+    </div>
+
+    <div class="contentoverlay">
+        <!-- =================================================================== -->
+        <!-- Product -->
+        <!-- =================================================================== -->
+        <div id="product">
+            <div class="center-elements">
+
+                <p class="heading1">
+                    ✨ Interesséiert?
+                </p>
+
+                <p class="text1 info">
+                    Rescue Rush gouf entwéckelt fir Kanner d’Grondlage vun der Éischter Hëllef op eng spilleresch Aart a
+                    Weis bäizebréngen. D'Spill wäert et an zwou spannende Versioune ginn!
+                </p>
+
+                <!-- First choice: Board Game -->
+                <div id="choice">
+                    <div id="product1">
+                        <p class="heading1">
+                            🎲 Gesellschaftsspill
+                        </p>
+                        <p class="text1">
+                            Eng praktesch Erfarung, perfekt fir zesummen spilleresch wichteg liewensrettend Fäegkeeten
+                            ze léieren. An der Grupp oder an der Famill. 🏡🧡
+                        </p>
+                        <div class="abpx">
+                            <a href="https://letzshop.lu/de/products/rescue-rush-023a3c" target="_blank">
+                                <button class="button2-disabled" disabled>
+                                    <p>Kafen</p>
+                                </button>
+                            </a>
+                            <a href="https://forms.gle/14Y6vrfGPcWER8D8A" target="_blank">
+                                <button class="button2">
+                                    <p>🛒 Virbestellen</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="product1">
+                        <img src="../images/promotionals/I_MultipleObjects.jpg" class="promotionals"
+                            alt="Brietspill Promo">
+                    </div>
+                </div>
+
+                <!-- Second choice: Online Game -->
+                <div id="choice">
+                    <div id="product1">
+                        <img src="../images/promotionals/I_Webgame.webp" class="promotionals" alt="Online Spill Promo">
+                    </div>
+
+                    <div id="product1">
+                        <p class="heading1">
+                            💻 Online Spill
+                        </p>
+                        <p class="text1">
+                            Eng digital Plattform, wou s du d’Grondlage vun der Éischter Hëllef zu all Moment a vun
+                            iwwerall aus léiere kanns – perfekt fir ënnerwee ze léieren an ze spillen. 📱✨
+                        </p>
+                        <a href="">
+                            <button class="button2-disabled" disabled>
+                                <p>🚀 Kënnt geschwënn!</p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- Mission -->
+        <!-- =================================================================== -->
+        <div id="mission">
+
+            <p class="heading1">
+                ❤️ Missioun
+            </p>
+
+            <p class="text1" style="font-style: italic;">
+                « All Sekonn zielt – Är Aktioune kënne Liewe retten. »
+            </p>
+
+            <p class="text3">
+                🚑 <strong>Éischt Hëllef rett Liewen.</strong><br><br>
+                Mir gleewen, datt d'Léiere vun Éischter Hëllef <strong>lëschteg</strong>, <strong>interaktiv</strong> a
+                <strong>ermutegend</strong> sollt sinn.<br><br>
+                Mat <strong>Rescue Rush</strong> gewannen jonk Helden déi <strong>Fäegkeeten</strong> an dat
+                <strong>Vertrauen</strong>, déi si brauchen, fir an Noutfäll en Ënnerscheed ze maachen.
+                <br><br>
+                <strong>Zesummen</strong> baue mir eng méi sécher Zukunft – eng Aktioun no der anerer.
+            </p>
+
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- Partners -->
+        <!-- =================================================================== -->
+        <div id="partners">
+            <p class="heading1">
+                🤝 Eis Partner
+            </p>
+            <p class="text1">
+                Stolz ënnerstëtz vu féierenden Experten, fir déi héichst Qualitéit, Service a Wierkung ze garantéieren.
+            </p>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <a href="https://www.kraizbierg.lu//" target="_blank">
+                            <img src="../images/partners/I_Kraizbierg-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.inll.lu/" target="_blank">
+                            <img src="../images/partners/S_INLL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.mixvoip.com/" target="_blank">
+                            <img src="../images/partners/S_MixVoip-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://letzshop.lu/products/rescue-rush-023a3c" target="_blank">
+                            <img src="../images/partners/I_Letzshop-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://jonk-entrepreneuren.lu/fr/" target="_blank">
+                            <img src="../images/partners/S_JEL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://minientreprises.lu/" target="_blank">
+                            <img src="../images/partners/I_ME-Logo.webp" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.artsetmetiers.lu/" target="_blank">
+                            <img src="../images/partners/I_AM-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://herrjeff.lu/" target="_blank">
+                            <img src="../images/partners/I_HJ-Logo.webp" height="75" width="250" alt="" />
+                        </a>
+                    </div>
+                    <!-- Repeat slides for infinite scroll effect -->
+                    <div class="slide">
+                        <a href="https://www.kraizbierg.lu//" target="_blank">
+                            <img src="../images/partners/I_Kraizbierg-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.inll.lu/" target="_blank">
+                            <img src="../images/partners/S_INLL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.mixvoip.com/" target="_blank">
+                            <img src="../images/partners/S_MixVoip-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://letzshop.lu/products/rescue-rush-023a3c" target="_blank">
+                            <img src="../images/partners/I_Letzshop-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://jonk-entrepreneuren.lu/fr/" target="_blank">
+                            <img src="../images/partners/S_JEL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://minientreprises.lu/" target="_blank">
+                            <img src="../images/partners/I_ME-Logo.webp" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.artsetmetiers.lu/" target="_blank">
+                            <img src="../images/partners/I_AM-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://herrjeff.lu/" target="_blank">
+                            <img src="../images/partners/I_HJ-Logo.webp" height="75" width="250" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- Newsletter -->
+        <!-- =================================================================== -->
+        <div id="newsletter">
+            <div class="center-elements">
+
+                <p class="heading1">
+                    📨 Newsletter
+                </p>
+
+                <p class="text3">
+                    <b>Abonéier dech</b> fir ëmmer um neiste Stand ze bleiwen an <b>all Mount</b> Neiegkeeten ze kréien.
+                    ✨
+                </p>
+
+                <form class="subform" id="newsletterform">
+                    <input type="email" placeholder="Deng E-Mail-Adress" id="email" required>
+
+                    <button type="submit" class="button2">
+                        <div>
+                            <span><b>📬 Elo abonnéieren</b></span>
+                        </div>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- Contact -->
+        <!-- =================================================================== -->
+        <div id="contact">
+
+            <p class="heading1">
+                🚑 Kontaktéiert eis
+            </p>
+
+            <p class="text3">
+                Hutt Dir eng Fro, eng Iddi oder wëllt einfach Hallo soen? <strong>Mir géifen eis freeën, vun Iech ze
+                    héieren!</strong> Schreift eis zu all Moment. 💬
+            </p>
+
+            <a href="../contact/">
+                <button class="button2">
+                    <p>
+                        ✉️ Kontaktéiert eis
+                    </p>
+                </button>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Footer -->
+    <!-- =================================================================== -->
+    <footer class="footer">
+        <div class="left-elements">
+            <p class="heading3">
+                Geschäftsbedéngungen
+            </p>
+            <a href="../ToS/" class="text4">
+                <p>
+                    Bedéngunge vum Service
+                </p>
+            </a>
+            <a href="../privacy-policy/" class="text4">
+                <p>
+                    Dateschutzrichtlinnen
+                </p>
+            </a>
+            <a href="../responsibility-disclaimer/" class="text4">
+                <p>
+                    Responsabilitéitssausschloss
+                </p>
+            </a>
+            <a href="../gdpr/" class="text4">
+                <p>
+                    GDPR Bedéngungen
+                </p>
+            </a>
+        </div>
+        <div class="right-elements">
+            <a href="https://www.instagram.com/rescue.rush/" target="_blank" class="icon-link"
+                title="Besicht eis Instagram">
+                <img src="../images/Socials/I_Instagram.webp" class="icon">
+            </a>
+            <a href="https://github.com/RescueRush/" target="_blank" class="icon-link" title="Besicht eis Github">
+                <img src="../images/Socials/S_Github.svg" class="icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

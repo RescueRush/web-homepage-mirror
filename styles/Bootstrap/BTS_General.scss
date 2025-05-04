@@ -1,0 +1,28 @@
+/* Desktop App */
+
+* {
+    /* Cursor Variables */
+    --cursorsize: 20px;
+
+    /* Button Variables */
+    --buttonmargin: 1.25dvw;
+    --buttonheight: 60px;
+    --buttonwidth: 250px;
+    --buttonborderradius:  32px;
+    --buttonfontsize: 1.25rem;
+
+    /* Element Placement */
+    --defaultleftmargin: 5dvw;
+
+    /* Footer */
+    --footersize: 21.625rem;
+    --ttp: 331px;
+    --footercolor: black;
+
+    /* Homebox Variables */
+    --homebox-width: 60.28dvw; /* 61.9375rem / 1920 * 100 */
+    --homebox-height: auto; /* 18.1875rem / 1080 * 100 */
+    --homebox-img-width: 58.21dvw; /* 58rem / 1920 * 100 */
+    --homebox-img-height: auto; /* 12rem / 1080 * 100 */
+}
+

@@ -1,0 +1,103 @@
+/* ========================================================================== */
+/* Main Component */
+/* ========================================================================== */
+
+#main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#main .center-elements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} 
+
+#main p.heading2 {
+    text-align: center;
+}
+
+/* ========================================================================== */
+/* Textblock */
+/* ========================================================================== */
+
+#textblock {
+    margin-top: 20dvh; /* Changed from px to dvh */
+    text-align: center;
+    background: radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 1), rgba(18, 18, 18, 0.5));
+    backdrop-filter: blur(2px);
+    width: 80dvw;
+    height: auto;
+    border-radius: 15px;
+}
+
+#textblock #content {
+    padding: 5%;
+}
+
+
+#textblock p,
+#textblock h3,
+#textblock ul,
+#textblock ul li,
+#textblock span {
+    text-align: left;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+#textblock .text p {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: "Inria Sans", serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#textblock .text h3 {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: "Inria Sans", serif;
+    font-size: 1.5rem; /* Changed from vw to rem */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#textblock .text ul {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+
+    color: #FFF;
+    font-family: "Inria Sans", serif;
+    font-size: 1.125rem; /* Changed from vw to rem */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#textblock .text p.active {
+    display: block !important;
+}
+
+/* ========================================================================== */
+/* Heading1 - Use Case is being discovered ? */
+/* ========================================================================== */
+
+.heading1 {
+    height: auto;
+    width: 20dvw;
+}
+
+

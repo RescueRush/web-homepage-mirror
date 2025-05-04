@@ -1,0 +1,154 @@
+/* ========================================================================== */
+/* Buttons */
+/* ========================================================================== */
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.button1:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.button2:hover {
+    background: white;
+    color: black;
+    font-weight: 600;
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.3);
+    text-shadow: none;
+}
+
+.button1 {
+    /* Positioning */
+    margin-top: var(--buttonmargin);
+    margin-bottom: var(--buttonmargin);
+    flex-shrink: 0;
+
+    /* Scaling */
+    width: var(--buttonwidth);
+    height: var(--buttonheight);
+    border-radius: var(--buttonborderradius);
+
+    /* Appearance */
+    background: white;
+    font-weight: 600;
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.3);
+    border: 0px solid transparent;
+
+    /* Content placement */
+    text-align: center;
+    font-family: "Inria Sans", serif;
+    font-size: var(--buttonfontsize);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    /* Content appearance */
+    color: black;
+    text-rendering: geometricPrecision;
+    transition: all 0.3s ease;
+
+
+}
+
+.button2,.button2-disabled {
+    /* Positioning */
+    flex-shrink: 0;
+
+    /* Scaling */
+    width: var(--buttonwidth);
+    height: var(--buttonheight);
+    border-radius: var(--buttonborderradius);
+
+    /* Appearance */
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.00);
+
+    /* Content placement */
+    text-align: center;
+    font-family: "Inria Sans", serif;
+    font-size: var(--buttonfontsize);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    /* Content appearance */
+    color: #FFF;
+    transition: all 0.3s ease;
+}
+.button2-disabled{
+    border-color: #777;
+    color: #777;
+}
+
+.button2-disabled:hover{
+    transform: unset;
+    cursor: not-allowed;
+
+}
+
+@media (max-width: 1100px) {
+
+
+    .button1 {
+        width: 58dvw !important;
+        animation: alternate 1s infinite flash;
+        border-radius: 10px !important;
+    }
+
+    .button2, .button2-disabled {
+        margin: 10px;
+        width: 40dvw !important;
+        height: 12dvw;
+        font-size: 16px;
+        animation: alternate 1s infinite flash;
+        border-radius: 10px !important;
+
+        max-width: 250px !important;
+        max-height: 60px !important;
+
+    }
+
+    .button2-disabled {
+        animation: unset;
+    }
+
+    @keyframes flash {
+        0% {
+            transform: scale(1);
+        }
+
+        100% {
+            transform: scale(1.05);
+        }
+    }
+}
+
+/* ========================================================================== */
+/* Icon Button */
+/* ========================================================================== */
+
+.icon-link {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon {
+    width: auto;
+    height: 105px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width:1100px) {
+    .icon {
+        height: 50px;
+        width: 50px;
+    }
+}

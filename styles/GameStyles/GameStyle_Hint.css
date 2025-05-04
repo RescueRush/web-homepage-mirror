@@ -1,0 +1,76 @@
+.materialList {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  transition: opacity 0.5s ease-in-out;
+  animation: fadeInMaterialList 0.5s ease-in-out;
+  z-index: 100;
+  -webkit-backdrop-filter: blur(10px);
+  gap: 12px;
+}
+
+.materialList.active {
+  opacity: 0;
+}
+
+.material img {
+  width: 50px;
+  margin: 10px;
+}
+
+.material {
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: center;
+  align-items: center;
+}
+
+.material p {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+  font-family: 'Inria Sans', sans-serif;
+  text-shadow: 2px 2px 0px black;
+  flex-wrap: wrap;
+  max-width: 35vw;
+}
+
+.material p strong {
+  color: #ffc107;
+}
+
+@media (max-width: 1100px) {
+  .materialList {
+    padding: 48px 0 48px 0;
+    top: 12dvh;
+    gap: 24px;
+  }
+
+  .material img {
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .material p {
+    font-size: 3vh;
+    max-width: unset;
+  }
+}
+
+@keyframes fadeInMaterialList {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,119 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Rescue Rush Newsletter</title>
+    <script src="../../script/Util.js"></script>
+    <script src="../../script/Pull/PLS_addHPdependencies.js"></script>
+    <!--<style>
+        body {
+            background-image: url('../../images/Backgrounds/BG_Contact.png');
+        }
+    </style>-->
+    <!-- Special Stylesheets -->
+    <link rel="stylesheet" href="../../styles/HomePage/HP_HomePage.css">
+    <link rel="stylesheet" href="../../styles/HomePage/HP_ScrollDown.css">
+    <link rel="stylesheet" href="../../styles/HomePage/HP_Product.css">
+    <link rel="stylesheet" href="../../styles/HomePage/HP_Mission.css">
+    <link rel="stylesheet" href="../../styles/HomePage/HP_About.css">
+    <link rel="stylesheet" href="../../styles/HomePage/HP_Partners.css">
+    <link rel="stylesheet" href="../../styles/HomePage/HP_Contact.css">
+
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="../../styles/Generic/G_Global.css">
+    <link rel="stylesheet" href="../../styles/Cursor/C_CursorStlye.css">
+
+    <link rel="stylesheet" href="../../styles/Generic/G_Animation.css">
+    <link rel="stylesheet" href="../../styles/Generic/G_Header.css">
+    <link rel="stylesheet" href="../../styles/Generic/G_Footer.css">
+    <link rel="stylesheet" href="../../styles/Generic/G_ElementPlacement.css">
+
+    <link rel="stylesheet" href="../../styles/Generic/G_TextBlock.css">
+    <link rel="stylesheet" href="../../styles/Generic/G_TextStyle.css">
+    <link rel="stylesheet" href="../../styles/Generic/G_Buttons.css">
+    <link rel="stylesheet" href="../../styles/Generic/G_ClickableIcons.css">
+
+
+    <link rel="stylesheet" href="../../styles/Generic/G_LangSelector.css">
+    <link rel="stylesheet" href="../../styles/Generic/G_LangPopup">
+
+</head>
+
+
+<body>
+    <!-- Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <!-- Generic Header --><!--
+    <div class="Header">
+
+        <div class="left_elements">
+            <a href="#" id="scrollToTop" class="icon-link" title="Visit Rescue Rush">
+                <img src="../../images/Logo/I_LogoTransparentSquare.png" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+
+        <div class="right_elements">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle">
+                    <img src="../../images/Flags/I_WireframeGlobe.png" alt="Dropdown Icon" class="dropdown-icon">
+                </label>
+                <div class="dropdown-content">
+                    <a href="#" data-lang="en">
+                        <img src="../../images/Flags/S_Lang-EN.svg" alt="English">
+                        <p class="text4">English</p>
+                    </a>
+                    <a href="#" data-lang="lu">
+                        <img src="../../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                        <p class="text4">Lëtzebuergesch</p>
+                    </a>
+                    <a href="#" data-lang="fr">
+                        <img src="../../images/Flags/S_Lang-FR.svg" alt="Français">
+                        <p class="text4">Français</p>
+                    </a>
+                    <a href="#" data-lang="de">
+                        <img src="../../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                        <p class="text4">Deutsch</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+-->
+
+    </div>
+    <div class="Content" id="Home">
+        <div class="center-elements">
+            <form>
+                <button type="submit">Unsubscribe</button>
+                <script>
+                    document.querySelector('form').addEventListener('submit', function (event) {
+                        event.preventDefault();
+
+                        const params = new URLSearchParams(window.location.search);
+
+                        if (!params.has("id")) {
+                            alert("Invalid unsubscription link.");
+                            window.location.replace("/");
+                            return;
+                        }
+
+                        const id = params.get("id");
+
+                        request('POST', "/newsletter/unsubscribe", { email: id })
+                            .then(() => {
+                                alert("Email unsubscribed !");
+                                window.location.replace("/");
+                            })
+                            .catch(() => {
+                                alert("Failed to unsubscribe email.");
+                            });
+                    });
+                </script>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

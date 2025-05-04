@@ -1,0 +1,204 @@
+
+.dropdown {
+    /* Positioning */
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    /* Appearance */
+    display: none;
+}
+
+.dropdown:hover .dropdown-icon {
+    /* Content appearance */
+    filter: brightness(50%) contrast(120%);
+}
+
+.dropdown-icon {
+    /* Positioning */
+    margin-right: 25px;
+    padding: 5px;
+
+    /* Scaling */
+    width: 25px;
+    height: 25px;
+
+    /* Appearance */
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.dropdown-content {
+    /* Positioning */
+    display: none;
+    position: absolute;
+    right: 24px;
+    top: 250%;
+
+    /* Appearance */
+    border-radius: 12px;
+    background: radial-gradient(farthest-corner at 100% 50%, rgba(0, 0, 0, 1), rgba(18, 18, 18, 0.7));
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 10px 0;
+}
+
+.dropdown-toggle:checked ~ .dropdown-content {
+    /* Positioning */
+    display: block;
+}
+
+.dropdown-content a {
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+    /* Scaling */
+    max-height: 24px;
+
+    /* Appearance */
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px 12px;
+    text-decoration: none;
+
+    /* Content appearance */
+    color: black;
+}
+
+.dropdown-content a img {
+    /* Scaling */
+    width: 20px;
+    height: 20px;
+
+    /* Appearance */
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.dropdown-content a:hover {
+    /* Appearance */
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.dropdown .text4 {
+    /* Positioning */
+    margin-left: 12px;
+    padding: 0;
+}
+
+.logger {
+    /* Positioning */
+    position: relative;
+    display: inline-block;
+}
+
+.logger-toggle {
+    /* Appearance */
+    display: none;
+}
+
+.logger:hover .logger-icon {
+    /* Content appearance */
+    filter: invert(0);
+    filter: contrast(0);
+}
+
+.logger-icon {
+    /* Positioning */
+    margin-right: 25px;
+    padding: 5px;
+
+    /* Scaling */
+    width: 25px;
+    height: 25px;
+
+    /* Appearance */
+    cursor: pointer;
+    object-fit: contain;
+    filter: invert(1);
+}
+
+.logger-content {
+    /* Positioning */
+    display: none;
+    position: absolute;
+    right: 24px;
+    top: 250%;
+
+    /* Appearance */
+    border-radius: 12px;
+    background: radial-gradient(farthest-corner at 100% 50%, rgba(0, 0, 0, 1), rgba(18, 18, 18, 0.7));
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 10px 0;
+}
+
+.logger-toggle:checked ~ .logger-content {
+    /* Positioning */
+    display: block;
+}
+
+.logger-content a {
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+    /* Scaling */
+    max-height: 24px;
+
+    /* Appearance */
+    border-radius: 6px;
+    margin: 10px;
+    padding: 10px 12px;
+    text-decoration: none;
+
+    /* Content appearance */
+    color: black;
+}
+
+.logger-content a img {
+    /* Scaling */
+    width: 20px;
+    height: 20px;
+
+    /* Appearance */
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.logger-content a:hover {
+    /* Appearance */
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.logger .text4 {
+    /* Positioning */
+    margin-left: 12px;
+    padding: 0;
+}
+
+.show {
+    /* Positioning */
+    display: block;
+}
+
+.hidden {
+    /* Positioning */
+    display: none;
+}
+
+.exit-button {
+    background: transparent;
+    border: none;
+}
+
+.exit-button:hover img{
+    filter: unset;
+    filter: contrast(0);
+}

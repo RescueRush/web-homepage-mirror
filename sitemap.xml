@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- HOMEPAGE -->
+    <url>
+        <loc>https://rescue-rush.lu/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+        <priority>1.00</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <url>
+        <loc>https://rescue-rush.lu/en/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+        <priority>0.80</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+        <priority>0.80</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/de/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/en/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+        <priority>0.80</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/lu/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+        <priority>0.80</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <!-- GAME -->
+    <url>
+        <loc>https://rescue-rush.lu/game/</loc>
+        <xhtml:link rel="canonical" hreflang="de" href="https://rescue-rush.lu/de/" />
+        <xhtml:link rel="canonical" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+        <xhtml:link rel="canonical" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+        <xhtml:link rel="canonical" hreflang="en" href="https://rescue-rush.lu/en/" />
+        <xhtml:link rel="canonical" hreflang="x-default" href="https://rescue-rush.lu/" />
+        <priority>0.61</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <!-- ToS -->
+    <url>
+        <loc>https://rescue-rush.lu/contact/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/contact/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/contact/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/contact/lu/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/contact/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/contact/" />
+        <priority>0.51</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <url>
+        <loc>https://rescue-rush.lu/contact/en/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/contact/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/contact/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/contact/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/contact/" />
+        <priority>0.50</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/contact/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/contact/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/contact/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/contact/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/contact/" />
+        <priority>0.50</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/contact/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/contact/de/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/contact/en/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/contact/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/contact/" />
+        <priority>0.50</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/contact/lu/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/contact/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/contact/fr/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/contact/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/contact/" />
+        <priority>0.50</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <!-- ToS -->
+    <url>
+        <loc>https://rescue-rush.lu/ToS/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/ToS/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/ToS/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/ToS/lu/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/ToS/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/ToS/" />
+        <priority>0.41</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <url>
+        <loc>https://rescue-rush.lu/ToS/en/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/ToS/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/ToS/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/ToS/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/ToS/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/ToS/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/ToS/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/ToS/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/ToS/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/ToS/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/ToS/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/ToS/de/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/ToS/en/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/ToS/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/ToS/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/ToS/lu/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/ToS/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/ToS/fr/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/ToS/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/ToS/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <!-- PRIVACY POLICY -->
+    <url>
+        <loc>https://rescue-rush.lu/privacy-policy/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/privacy-policy/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/privacy-policy/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/privacy-policy/lu/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/privacy-policy/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/privacy-policy/" />
+        <priority>0.41</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <url>
+        <loc>https://rescue-rush.lu/privacy-policy/en/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/privacy-policy/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/privacy-policy/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/privacy-policy/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/privacy-policy/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/privacy-policy/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/privacy-policy/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/privacy-policy/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/privacy-policy/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/privacy-policy/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/privacy-policy/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/privacy-policy/de/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/privacy-policy/en/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/privacy-policy/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/privacy-policy/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/privacy-policy/lu/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/privacy-policy/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/privacy-policy/fr/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/privacy-policy/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/privacy-policy/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <!-- RESPONSIBILITY DISCLAIMER -->
+    <url>
+        <loc>https://rescue-rush.lu/responsibility-disclaimer/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/responsibility-disclaimer/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/responsibility-disclaimer/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/responsibility-disclaimer/lu/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/responsibility-disclaimer/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/responsibility-disclaimer/" />
+        <priority>0.41</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <url>
+        <loc>https://rescue-rush.lu/responsibility-disclaimer/en/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/responsibility-disclaimer/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/responsibility-disclaimer/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/responsibility-disclaimer/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/responsibility-disclaimer/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/responsibility-disclaimer/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/responsibility-disclaimer/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/responsibility-disclaimer/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/responsibility-disclaimer/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/responsibility-disclaimer/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/responsibility-disclaimer/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/responsibility-disclaimer/de/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/responsibility-disclaimer/en/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/responsibility-disclaimer/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/responsibility-disclaimer/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/responsibility-disclaimer/lu/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/responsibility-disclaimer/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/responsibility-disclaimer/fr/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/responsibility-disclaimer/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/responsibility-disclaimer/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <!-- GDPR -->
+    <url>
+        <loc>https://rescue-rush.lu/gdpr/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/gdpr/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/gdpr/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/gdpr/lu/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/gdpr/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/gdpr/" />
+        <priority>0.41</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+    <url>
+        <loc>https://rescue-rush.lu/gdpr/en/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/gdpr/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/gdpr/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/gdpr/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/gdpr/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/gdpr/de/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/gdpr/en/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/gdpr/fr/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/gdpr/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/gdpr/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/gdpr/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/gdpr/de/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/gdpr/en/" />
+        <xhtml:link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/gdpr/lu/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/gdpr/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+    <url>
+        <loc>https://rescue-rush.lu/gdpr/lu/</loc>
+        <xhtml:link rel="alternate" hreflang="de" href="https://rescue-rush.lu/gdpr/de/" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/gdpr/fr/" />
+        <xhtml:link rel="alternate" hreflang="en" href="https://rescue-rush.lu/gdpr/en/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/gdpr/" />
+        <priority>0.40</priority>
+        <lastmod>{date-g}</lastmod>
+    </url>
+
+</urlset>

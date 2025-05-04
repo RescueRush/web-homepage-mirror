@@ -1,0 +1,67 @@
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#contact-form label {
+    width: 80%;
+    /*height: 5.8125rem;*/
+    flex-shrink: 0;
+
+    color: #FFF;
+    text-align: start;
+    font-family: "Inria Sans", serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+#name,
+#email,
+#message {
+    width: 80%;
+    height: 2.1875rem;
+    flex-shrink: 0;
+    border-radius: 5px;
+    /*margin-top: -75px;*/
+
+    border: none;
+    outline: none; 
+    padding: 10px; 
+
+    background-color: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(2px);
+
+    color: #FFF;
+    text-align: start;
+    font-family: "Inria Sans", serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    transition: all 0.3s ease;
+}
+
+#name:hover,
+#email:hover,
+#message:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#name:focus,
+#email:focus,
+#message:focus {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#message {
+    height: 17.125rem;
+    margin-bottom: 50px;
+}
+
+
+
+

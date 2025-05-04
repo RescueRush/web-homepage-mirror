@@ -1,0 +1,123 @@
+/* ========================================================================== */
+/* Menu - Introduction */
+/* ========================================================================== */
+
+#intro {
+    width: 100vw;
+    height: 88dvh;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12dvh;
+}
+
+.textRRBanner {
+    max-height: 20dvh;
+    width: 90dvw;
+    position: bottom;
+    animation: scaledown 3s forwards;
+}
+
+.textRRBanner2 {
+    display: none;
+}
+
+.logoAmbulanceBig {
+    margin-top: -5dvh;
+    margin-bottom: -5dvh;
+
+    height: auto;
+    width: 50dvw;
+    max-height: 60dvh;
+    animation: rideout 3s forwards;
+}
+
+.logoAmbulanceBig-mobile {
+    display: none;
+}
+
+
+@media (max-width: 1100px) {
+
+    .textRRBanner {
+        display: none;
+    }
+    .textRRBanner2 {
+        max-height: 20dvh;
+        width: 90dvw;
+        display: block;
+    }
+
+    .logoAmbulanceBig {
+        display: none;
+    }
+    
+    .logoAmbulanceBig-mobile {
+        display: block;
+        height: 75vw;
+        width: 75vw;
+        animation: evaporate-mobile 3s forwards;
+    }
+
+    #logostarter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+}
+
+
+@keyframes evaporate-mobile {
+    0% {
+        transform: none;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+
+@keyframes scaledown {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+
+    
+}
+
+@keyframes rideout {
+    0% {
+        margin-right: 0;
+    }
+
+    50% {
+        margin-right: 2vw;
+        margin-top: 10vh;    
+    }
+
+    75% {
+        margin-right: 500vw;
+        filter: opacity(1);
+    }
+
+    100% {
+        margin-right: 100vw;
+        color: transparent;
+        background: transparent;
+        filter: opacity(0);
+        margin-top: 10vh;
+    }
+}
+
+.transparent {
+    opacity: 0% !important;
+}

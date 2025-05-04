@@ -1,0 +1,20 @@
+/*#custom-cursor {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 0px black;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.2s ease;
+    z-index: 9999;
+    transition: width 0.1s ease, height 0.1s ease, border-color 0.15s ease, background-color 0.15s ease ;
+
+}
+
+.custom-cursoronhovered {
+    width:  var(--cursorsize) !important;
+    height: var(--cursorsize) !important;
+    background-color: rgba(0, 0, 0, 1) !important;
+    border: solid 1px white !important;
+}*/

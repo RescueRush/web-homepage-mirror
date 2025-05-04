@@ -1,0 +1,508 @@
+
+<html lang="en">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup -->
+    <!-- =================================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Homepage</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="description" content="Rescue Rush, the educational first aid game that makes learning life-saving skills both fun and
+        interactive!" />
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Rescue Rush &#8226; Play, Learn, Rescue" />
+    <meta property="og:description" content="Rescue Rush, the educational first aid game that makes learning life-saving skills both fun and
+        interactive!" />
+    <meta property="og:image" content="https://rescue-rush.lu/images/promotionals/OG_Banner.webp" />
+    <meta property="og:url" content="https://rescue-rush.lu/en/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rescue Rush" />
+
+    <!-- SEO Google -->
+    <link rel="alternate" hreflang="de" href="https://rescue-rush.lu/de/" />
+    <link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+    <link rel="alternate" hreflang="en" href="https://rescue-rush.lu/en/" />
+    <link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+    <link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+    <link rel="canonical" href="https://rescue-rush.lu/en/" />
+    <link rel="manifest" href="https://rescue-rush.lu/manifests/home/en.json" />
+
+    <!-- =================================================================== -->
+    <!-- Background -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('../images/background/Background_Homepage.webp');
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="../prerequisites/InriaSans.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="../prerequisites/bootstrap.js"></script>
+    <link href="../styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="../styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="../styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="../styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Cursor.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Homepage.css">
+    <link rel="stylesheet" href="../styles/Base_Styles/Style_Language.css">
+
+    <!--jQuery Scripts-->
+    <script src="../prerequisites/jquery.js"></script>
+
+    <!--Cursor Scripts-->
+    <script src="../script/ProjectSettings/Cursor/PS_Cursor.js"></script>
+    <script src="../script/ProjectSettings/Cursor/PS_CursorInteraction.js"></script>
+
+    <!--Cookies Scripts-->
+    <script src="../script/ProjectSettings/PS_LanguageSelector.js"></script>
+    <script src="../script/Util.js"></script>
+
+    <!--Pop-up Script-->
+    <script src="../script/PopupSender.js"></script>
+</head>
+
+<body>
+    <!-- =================================================================== -->
+    <!-- Custom Cursor -->
+    <!-- =================================================================== -->
+    <div id="custom-cursor"></div>
+
+    <!-- =================================================================== -->
+    <!-- Lëtzshop Vendor -->
+    <!-- =================================================================== -->
+    <script type="text/javascript" src="../script/PP_VendorLetzShopPP.js"></script>
+    <div id="main"></div>
+    <!-- =================================================================== -->
+    <!-- Header -->
+    <!-- =================================================================== -->
+    <header class="header">
+        <div class="left-elements">
+            <a href="#main" id="scrolltotop" class="icon-link" title="Visit Rescue Rush">
+                <img src="../images/Logo/I_LogoTransparentSquare.webp" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- Language Selector -->
+        <!-- =============================================================== -->
+        <div class="right-elements">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle">
+                    <img src="../images/Flags/I_WireframeGlobe.webp" alt="Dropdown Icon" class="dropdown-icon">
+                </label>
+                <div class="dropdown-content">
+                    <a href="../" data-lang="en">
+                        <img src="../images/Flags/S_Lang-EN.svg" alt="English">
+                        <p class="text4">English</p>
+                    </a>
+                    <a href="../lu/" data-lang="lu">
+                        <img src="../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                        <p class="text4">Lëtzebuergesch</p>
+                    </a>
+                    <a href="../fr/" data-lang="fr">
+                        <img src="../images/Flags/S_Lang-FR.svg" alt="Français">
+                        <p class="text4">Français</p>
+                    </a>
+                    <a href="../de/" data-lang="de">
+                        <img src="../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                        <p class="text4">Deutsch</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- Splashscreen -->
+    <!-- =================================================================== -->
+    <div id="home"></div>
+    <div class="content">
+        <div class="left-elements" id="splashscreen">
+            <p class="title">
+                PLAY LEARN RESCUE
+            </p>
+            <div class="mobile">
+                <a href="#product">
+                    <button class="button1">
+                        <p>
+                            Buy Board
+                        </p>
+                    </button>
+                </a>
+                <a href="#onlinegame">
+                    <button class="button1">
+                        <p>
+                            Play Online
+                        </p>
+                    </button>
+                </a>
+            </div>
+            <p class="subtitle">
+                Rescue Rush, the educational first aid game that makes learning life-saving skills both fun and
+                interactive!
+            </p>
+
+        </div>
+    </div>
+
+
+    <div class="contentoverlay">
+        <!-- =================================================================== -->
+        <!-- Product -->
+        <!-- =================================================================== -->
+        <div id="product">
+            <div class="center-elements">
+
+                <p class="heading1">
+                    ✨ Interested ?
+                </p>
+
+                <p class="text1 info">
+                    Designed to teach kids the basics of first aid,
+                    <strong>Rescue Rush</strong> offers two fun ways to start learning!
+                </p>
+
+                <!-- First choice: Board Game -->
+                <div id="choice">
+                    <div id="product1">
+                        <p class="heading1">
+                            🎲 Board Game
+                        </p>
+                        <p class="text1">
+                            Hands-on fun for families and groups!
+                            Bring life-saving skills straight to your table. 🏡🧡
+                        </p>
+                        <div class="abpx">
+                            <a href="https://letzshop.lu/en/products/rescue-rush-023a3c" target="_blank">
+                                <button class="button2-disabled" disabled>
+                                    <p>Buy</p>
+                                </button>
+                            </a>
+                            <a href="https://forms.gle/14Y6vrfGPcWER8D8A" target="_blank">
+                                <button class="button2">
+                                    <p>🛒 Preorder</p>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="product1">
+                        <img src="../images/promotionals/I_MultipleObjects.jpg" class="promotionals"
+                            alt="Board Game Promo">
+                    </div>
+                </div>
+
+                <!-- Second choice: Online Game -->
+                <div id="choice">
+                    <div id="product1">
+                        <img src="../images/promotionals/I_Webgame.webp" class="promotionals" alt="Online Game Promo">
+                    </div>
+
+                    <div id="product1">
+                        <p class="heading1">
+                            💻 Online Game
+                        </p>
+                        <p class="text1">
+                            Learn and play anytime, anywhere —
+                            First aid basics at your fingertips! 📱✨
+                        </p>
+                        <a href="">
+                            <button class="button2-disabled" disabled>
+                                <p>🚀 Coming Soon!</p>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- Mission -->
+        <!-- =================================================================== -->
+        <div id="mission">
+
+            <p class="heading1">
+                ❤️ Why We Care
+            </p>
+
+            <p class="text1" style="font-style: italic;">
+                « Every Second Counts — Your actions can save lives. »
+            </p>
+
+            <p class="text3">
+                🚑 <strong>First aid saves lives.</strong><br><br>
+                We believe learning first aid should be <strong>fun</strong>, <strong>interactive</strong>, and
+                <strong>empowering</strong> for everyone.<br><br>
+                With <strong>Rescue Rush</strong>, young heroes will gain the <strong>skills</strong> and
+                <strong>confidence</strong> they need to make a real difference when it matters most.
+                <br><br>
+                <strong>Together</strong> we’re building a safer future — one action at a time.
+            </p>
+
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- Partners -->
+        <!-- =================================================================== -->
+        <div id="partners">
+            <p class="heading1">
+                🤝 Our Trusted Partners
+            </p>
+            <p class="text1">
+                Proudly endorsed by top experts to guarantee the highest quality, service, and impact.
+            </p>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <a href="https://www.kraizbierg.lu//" target="_blank">
+                            <img src="../images/partners/I_Kraizbierg-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.inll.lu/" target="_blank">
+                            <img src="../images/partners/S_INLL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.mixvoip.com/" target="_blank">
+                            <img src="../images/partners/S_MixVoip-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://letzshop.lu/products/rescue-rush-023a3c" target="_blank">
+                            <img src="../images/partners/I_Letzshop-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://jonk-entrepreneuren.lu/fr/" target="_blank">
+                            <img src="../images/partners/S_JEL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://minientreprises.lu/" target="_blank">
+                            <img src="../images/partners/I_ME-Logo.webp" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.artsetmetiers.lu/" target="_blank">
+                            <img src="../images/partners/I_AM-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://herrjeff.lu/" target="_blank">
+                            <img src="../images/partners/I_HJ-Logo.webp" height="75" width="250" alt="" />
+                        </a>
+                    </div>
+                    <!-- Repeat slides for infinite scroll effect -->
+                    <div class="slide">
+                        <a href="https://www.kraizbierg.lu//" target="_blank">
+                            <img src="../images/partners/I_Kraizbierg-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.inll.lu/" target="_blank">
+                            <img src="../images/partners/S_INLL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.mixvoip.com/" target="_blank">
+                            <img src="../images/partners/S_MixVoip-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://letzshop.lu/products/rescue-rush-023a3c" target="_blank">
+                            <img src="../images/partners/I_Letzshop-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://jonk-entrepreneuren.lu/fr/" target="_blank">
+                            <img src="../images/partners/S_JEL-Logo.svg" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://minientreprises.lu/" target="_blank">
+                            <img src="../images/partners/I_ME-Logo.webp" height="100" width="250" alt="" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://www.artsetmetiers.lu/" target="_blank">
+                            <img src="../images/partners/I_AM-Logo.webp" height="100" width="250" />
+                        </a>
+                    </div>
+                    <div class="slide">
+                        <a href="https://herrjeff.lu/" target="_blank">
+                            <img src="../images/partners/I_HJ-Logo.webp" height="75" width="250" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- Newsletter -->
+        <!-- =============================================================== -->
+        <div id="newsletter">
+            <div class="center-elements">
+
+                <p class="heading1">
+                    📨 Newsletter
+                </p>
+
+                <p class="text3">
+                    <b>Stay in the Loop!</b>
+                    Subscribe for <b>monthly updates</b>, news, and exclusive offers.
+                    <span style="font-size: 1.2em;">✨</span>
+                </p>
+
+                <form class="subform" id="newsletterform">
+                    <input type="email" placeholder="Your Email Address" id="email" required>
+
+                    <button type="submit" class="button2">
+                        <div>
+                            <span><b>📬 Subscribe Now</b></span>
+                        </div>
+                    </button>
+
+                    <script>
+                        const emailInput = document.querySelector('#newsletterform > input#email');
+                        const submitButton = document.querySelector('#newsletterform > button');
+
+                        document.querySelector('#newsletterform').addEventListener('submit', function (event) {
+                            event.preventDefault();
+
+                            const email = emailInput.value.trim();
+
+                            if (email.trim() === '') {
+                                return;
+                            }
+
+                            request('POST', "/newsletter/subscribe", { email: email, lang: getCurrentLanguage(), source: getPageSource() })
+                                .then(() => {
+                                    newPopup("<b>Congratulations!</b> 🎉 You are now subscribed to our Newsletter! 📨", "Close");
+                                    document.querySelector('#newsletterform > input#email').value = "";
+                                })
+                                .catch(() => {
+                                    newPopup("<b>Subscription failed</b> 😞 Please try again later. 🔁", "Close");
+                                });
+                        });
+                    </script>
+                </form>
+
+            </div>
+        </div>
+
+
+        <!-- =================================================================== -->
+        <!-- Contact -->
+        <!-- =================================================================== -->
+        <!-- Contact -->
+        <div id="contact">
+
+            <p class="heading1">
+                🚑 Get in Touch
+            </p>
+
+            <p class="text3">
+                Have a question, idea, or just want to say hello?
+                <strong>We'd love to hear from you!</strong> Drop us a message anytime. 💬
+            </p>
+
+            <a href="../contact/">
+                <button class="button2">
+                    <p>
+                        ✉️ Reach Out
+                    </p>
+                </button>
+            </a>
+
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- About - Deprecated -->
+        <!-- =================================================================== -->
+        <!--<div id="about">
+        <div class="center-elements">
+            <p class="heading2">
+                OUR TEAM
+            </p>
+            <p class="heading1">RESCUE RUSH</p>
+            <p class="text3">
+                We are a passionate group of 6 students from the Lycée des Arts et Métiers. We founded our
+                mini-enterprise in October 2024.
+            </p>
+            <a href="#about">
+                <button class="button2">
+                    <p>
+                        Learn More
+                    </p>
+                </button>
+            </a>
+        </div>
+    </div>-->
+
+
+
+    </div>
+
+
+    <!-- =================================================================== -->
+    <!-- Footer -->
+    <!-- =================================================================== -->
+    <footer class="footer">
+        <div class="left-elements">
+            <p class="heading3">
+                Terms & Conditions
+
+            </p>
+            <a href="../ToS/" class="text4">
+                <p>
+                    Terms of Service
+                </p>
+            </a>
+            <a href="../privacy-policy/" class="text4">
+                <p>
+                    Privacy Policy
+                </p>
+            </a>
+            <a href="../responsibility-disclaimer/" class="text4">
+                <p>
+                    Responsibility Disclaimer
+                </p>
+            </a>
+            <a href="../gdpr/" class="text4">
+                <p>
+                    GDPR Terms
+                </p>
+            </a>
+        </div>
+        <div class="right-elements">
+            <a href="https://www.instagram.com/rescue.rush/" target="_blank" class="icon-link"
+                title="Visit our Instagram">
+                <img src="../images/Socials/I_Instagram.webp" class="icon">
+            </a>
+            <a href="https://github.com/RescueRush/" target="_blank" class="icon-link" title="Visit our Github">
+                <img src="../images/Socials/S_Github.svg" class="icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

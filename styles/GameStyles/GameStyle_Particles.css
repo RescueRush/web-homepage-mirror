@@ -1,0 +1,79 @@
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    top: -100px;
+    animation: fall 3s linear forwards;
+  }
+
+  @keyframes fall {
+    to {
+      transform: translateY(100vh) rotateZ(360deg);
+      opacity: 0;
+    }
+  }
+
+  
+  .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 1;
+    animation: explode 1.2s ease-out forwards;
+  }
+
+  @keyframes explode {
+    to {
+      transform: translate(var(--dx), var(--dy));
+      opacity: 0;
+    }
+  }
+
+  .flash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    opacity: 0;
+    z-index: 10;
+    pointer-events: none;
+    animation: flash-red 0.3s ease-out forwards;
+  }
+
+  @keyframes flash-red {
+    0%   { opacity: 0.7; }
+    100% { opacity: 0; }
+  }
+
+  .shake {
+    animation: shake 0.4s ease-in-out;
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translate(0); }
+    25% { transform: translate(-8px, 0); }
+    50% { transform: translate(8px, 0); }
+    75% { transform: translate(-8px, 0); }
+  }
+
+  .x-particle {
+    position: absolute;
+    color: red;
+    font-size: 20px;
+    opacity: 1;
+    animation: explodeX 1.2s ease-out forwards;
+    pointer-events: none;
+    z-index: 20;
+  }
+
+  @keyframes explodeX {
+    to {
+      transform: translate(var(--dx), var(--dy)) rotate(720deg);
+      opacity: 0;
+    }
+  }
