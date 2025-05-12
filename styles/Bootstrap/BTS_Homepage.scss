@@ -1,0 +1,77 @@
+#about {
+    --about-margin: 0;
+    --about-width: 100vw;
+    --about-heigth: auto;
+    --about-gap: 10px;
+    --about-padding-y: 10dvh;
+
+    --about-color: radial-gradient(farthest-corner at 100% 100%, rgba(0, 0, 0, 1), rgba(18, 18, 18, 0.5));
+    --about-filter: blur(2px);
+
+    --about-text3-width: 37dvw;
+    --about-text3-margin: 10px;
+
+    //For Mobile
+    --about-to-mobile-size: 500px;
+
+    --about-headin2-font-size: 25px;
+    --about-heading1-font-size: 40px;
+    --about-text3-font-size: 25px;
+    --about-text3-max-width: 80vw;
+}
+
+#splashscreen {
+    --splashscreen-margin: 30dvh;
+    --splashscreen-width: 35dvw;
+    --splashscreen-height: auto;
+    --splashscreen-min-height: 70dvh;
+    --splashscreen-subtitle-max-width: 60dvw;
+
+    //For Mobile
+    --splashscreen-to-mobile-size: 500px;
+
+    --splashscreen-mobile-margin: 0;
+    --splashscreen-mobile-width: auto;
+    --splashscreen-subtitle-mobile-max-width: 80dvw;
+    --splashscreen-subtitle-mobile-font-size: 1rem;
+
+}
+
+.mobile {
+    --mobile-margin-top: 3dvh;
+    --mobile-margin-bottom: 5dvh;
+    --mobile-gap: 0.5dvh;
+}
+
+.scrollbox {
+    --scrollbox-width: auto;
+}
+
+#email,
+#message,
+#name,
+#password,
+#password-confirm,
+#username {
+    --label-width: min(80%, 350px);
+    --label-height: 2.1875rem;
+    --label-border-radius: 5px;
+    --label-margin-bottom: 24px;
+    --label-padding: 10px;
+
+    --label-background-color: rgba(0, 0, 0, 0.30);
+    --label-background-color-focused: rgba(0, 0, 0, 0.9);
+    --label-filter: blur(2px);
+
+    --label-text-color: #FFF;
+
+    --label-font-size: 1.25rem;
+    --label-transition-time: 0.3s;
+
+    --message-height: 17.125rem;
+    --message-margin: 50px;
+}
+
+.subform {
+    --form-gap: 24px;
+}

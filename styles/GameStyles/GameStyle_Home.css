@@ -1,0 +1,10 @@
+/* ========================================================================== */
+/* Additional TextStyle */
+/* ========================================================================== */
+.heading5 {
+    color: white;
+    font-size: 6vh;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+    font-family: "Excon-Variable";
+}

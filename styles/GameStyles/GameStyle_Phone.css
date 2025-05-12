@@ -1,0 +1,114 @@
+.phone-wrapper {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    z-index: 1000;
+}
+
+.phone-container {
+    width: 160px;
+    height: 300px;
+    border: 4px solid black;
+    border-radius: 30px;
+    background: gray;
+    box-shadow: 10px 5px 10px black;
+    position: relative;
+    transform: rotate(3deg);
+    animation: shakePhone 0.3s ease-in-out forwards;
+}
+
+.phone-wrapper.active {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+.screen {
+    position: absolute;
+    top: 30px;
+    left: 5px;
+    right: 5px;
+    bottom: 30px;
+    background: linear-gradient(-30deg, black 50%, rgba(255, 255, 255, 0.25) 105%);
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.speaker {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-2900%);
+    width: 35px;
+    height: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: darkgray;
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80%);
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background: darkgray;
+}
+
+.speech-bubble {
+    font-family: 'Excon-Variable';
+    color: black;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 3px 3px 10px black;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 180px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 1;
+    animation: popInBubble 0.5s ease-out forwards;
+    font-weight: 700;
+    font-stretch: expanded;
+}
+
+
+
+@keyframes shakePhone {
+    0% {
+        transform: rotate(3deg) translateX(0);
+    }
+
+    25% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(4deg);
+    }
+
+    75% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(3deg) translateX(0);
+    }
+}
+
+@keyframes popInBubble {
+    to {
+        transform: translateX(-50%) scale(1);
+        opacity: 1;
+    }
+}

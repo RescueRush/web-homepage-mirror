@@ -1,0 +1,100 @@
+#profile {
+    padding: 40vh 0 20vh 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 0;
+    position: absolute;
+    height: auto;
+    width: 100vw;
+    opacity: 0%;
+    transition: opacity 0.3s, display 0.3s;
+
+    color: white;
+    font-family: "Excon-Variable";
+    font-size: 2vh;
+    text-shadow: 1px 1px black;
+}
+
+.hidden {
+    display: hidden;
+    height: 0;
+    padding: 0 !important;
+}
+
+.hidden * {
+    display: hidden;
+    height: 0;
+    padding: 0 !important;
+}
+
+
+.usergameinfo,
+.useraccountinfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 96px 48px 96px;
+    margin: 12px 0 12px 0;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 24px;
+    justify-content: center;
+}
+
+.usergameinfo {
+    padding-bottom: 48px;
+}
+
+
+#profile .heading1 {
+    margin: 48px 0 24px 0;
+}
+
+.userinformation {
+    display: flex;
+    flex-direction: row;
+    min-width: 35vw;
+    justify-content: space-between;
+}
+
+.ratio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#ratioP {
+    color: rgb(0, 255, 0);
+    font-weight: 600;
+}
+
+#ratioN {
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+}
+
+#publicinfo {
+    margin-bottom: 48px;
+}
+
+@media (max-width: 1100px) {
+    #profile { 
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 12vh 0 12vh 0;
+            font-size: 3vh;
+    }
+    #profile .heading1 {
+        margin: 12px;
+    }
+
+    .usergameinfo, .useraccountinfo {
+        padding: unset;
+        background-color: unset;
+        margin: 12px;
+        border-radius: unset;
+    }
+}

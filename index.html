@@ -1,0 +1,111 @@
+
+<html lang="en">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup -->
+    <!-- =================================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Languages</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <meta name="description" content="Rescue Rush &#8226; Available in Luxembourgish, English, French, and German &#8226; Disponible en luxembourgeois, anglais, français et allemand &#8226; Verfügbar auf Luxemburgisch, Englisch, Französisch und Deutsch &#8226; Disponibel op Lëtzebuergesch, Englesch, Franséisch an Däitsch" />
+    <meta name="title" content="Rescue Rush &#8226; Available in Luxembourgish, English, French, and German" />
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Rescue Rush" />
+    <meta property="og:description" content="Rescue Rush &#8226; Available in Luxembourgish, English, French, and German &#8226; Disponible en luxembourgeois, anglais, français et allemand &#8226; Verfügbar auf Luxemburgisch, Englisch, Französisch und Deutsch &#8226; Disponibel op Lëtzebuergesch, Englesch, Franséisch an Däitsch" />
+    <meta property="og:image" content="https://rescue-rush.lu/images/promotionals/OG_Banner.webp" />
+    <meta property="og:url" content="https://rescue-rush.lu/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Rescue Rush" />
+    <meta property="og:logo" content="https://rescue-rush.lu/images/Logo/I_LogoWhiteRound-1024x1024.webp" />
+
+    <!-- SEO Google -->
+    <link rel="alternate" hreflang="de" href="https://rescue-rush.lu/de/" />
+    <link rel="alternate" hreflang="fr" href="https://rescue-rush.lu/fr/" />
+    <link rel="alternate" hreflang="en" href="https://rescue-rush.lu/en/" />
+    <link rel="alternate" hreflang="lb" href="https://rescue-rush.lu/lu/" />
+    <link rel="alternate" hreflang="x-default" href="https://rescue-rush.lu/" />
+    <meta name="robots" content="index,follow" />
+    <link rel="manifest" href="https://rescue-rush.lu/manifests/home/x-default.json" />
+
+    <!-- =================================================================== -->
+    <!-- Background -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('images/background/Background_Homepage.webp');
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="prerequisites/excon.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="prerequisites/bootstrap.js"></script>
+    <link href="styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="styles/Base_Styles/Style_Cursor.css">
+    <link rel="stylesheet" href="styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="styles/Base_Styles/Style_Homepage.css">
+    <link rel="stylesheet" href="styles/Base_Styles/Style_Language.css">
+
+    <!--jQuery Scripts-->
+    <script src="prerequisites/jquery.js"></script>
+
+    <!--Cursor Scripts-->
+    <script src="script/ProjectSettings/Cursor/PS_Cursor.js"></script>
+    <script src="script/ProjectSettings/Cursor/PS_CursorInteraction.js"></script>
+
+    <!--Cookies Scripts-->
+    <script src="script/ProjectSettings/PS_LanguageSelector.js"></script>
+    <script src="script/Multilanguage.js"></script>
+    <script src="script/Util.js"></script>
+</head>
+
+<body>
+    <!-- =================================================================== -->
+    <!-- Custom Cursor -->
+    <!-- =================================================================== -->
+    <div id="custom-cursor"></div>
+
+    <!-- =================================================================== -->
+    <!-- Pop-Up Container -->
+    <!-- =================================================================== -->
+    <div class="popup-container" id="popup">
+        <div class="popup-box">
+            <a href="en/" hreflang="en" data-lang="en" class="active">
+                <img src="../images/Flags/S_Lang-EN.svg" alt="English">
+                <p class="text4">English</p>
+            </a>
+            <a href="lu/" hreflang="lb" data-lang="lu" class="active">
+                <img src="../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                <p class="text4">Lëtzebuergesch</p>
+            </a>
+            <a href="fr/" hreflang="fr" data-lang="fr" class="active">
+                <img src="../images/Flags/S_Lang-FR.svg" alt="Français">
+                <p class="text4">Français</p>
+            </a>
+            <a href="de/" hreflang="de" data-lang="de" class="active">
+                <img src="../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                <p class="text4">Deutsch</p>
+            </a>
+            <!-- <button id="closePopup" onclick="closeLanguagePopup()">Close</button>-->
+        </div>
+    </div>
+
+</body>
+
+</html>

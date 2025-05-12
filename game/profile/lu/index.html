@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup  -->
+    <!-- =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Menü</title>
+
+    <!-- =================================================================== -->
+    <!-- Background Images -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('../../../images/background/Background_GameMenu.webp');
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="../../../prerequisites/excon.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="../../../prerequisites/bootstrap.js"></script>
+    <link href="../../../styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="../../../styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="../../../styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="../../../styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Language.css">
+
+
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Button.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Leaderboard.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Home.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Header.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Intro.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Profile.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Menu.css">
+
+    <!--jQuery Scripts-->
+    <script src="../../../prerequisites/jquery.js"></script>
+
+    <!--Cookies Scripts-->
+    <script src="../../../script/Util.js"></script>
+
+    <!--Pop-up Script-->
+    <script src="../../../script/PopupSender.js"></script>
+</head>
+
+<body>
+    <!-- =================================================================== -->
+    <!-- Header -->
+    <!-- =================================================================== -->
+    <header class="header">
+        <div class="left-elements">
+            <a href="../../../" id="scrolltotop" class="icon-link" title="Home">
+                <img src="../../../images/Logo/I_LogoTransparentSquare.webp" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+
+
+        <!-- =============================================================== -->
+        <!-- Language Selector -->
+        <!-- =============================================================== -->
+        <div class="right-elements">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle">
+                    <img src="../../../images/Flags/I_WireframeGlobe.webp" alt="Dropdown Icon" class="dropdown-icon"
+                        title="Change Language">
+                </label>
+                <div class="dropdown-content">
+                    <a href="../en" data-lang="en">
+                        <img src="../../../images/Flags/S_Lang-EN.svg" alt="English">
+                        <p class="text4">English</p>
+                    </a>
+                    <a href="../lu/" data-lang="lu">
+                        <img src="../../../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                        <p class="text4">Lëtzebuergesch</p>
+                    </a>
+                    <a href="../fr/" data-lang="fr">
+                        <img src="../../../images/Flags/S_Lang-FR.svg" alt="Français">
+                        <p class="text4">Français</p>
+                    </a>
+                    <a href="../de/" data-lang="de">
+                        <img src="../../../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                        <p class="text4">Deutsch</p>
+                    </a>
+                </div>
+            </div>
+            <a href="../../connect/" title="Disconnect">
+                <button class="exit-button">
+                    <img src="../../../images/Icons/Disconnect.webp" class="logger-icon">
+                </button>
+            </a>
+        </div>
+    </header>
+
+    
+    <!-- =================================================================== -->
+    <!-- Profile -->
+    <!-- =================================================================== -->
+    <div id="profile" class="current">
+        <!-- =============================================================== -->
+        <!-- Personal Information (To hide if inspecting a profile) -->
+        <!-- =============================================================== -->
+        <div id="personalinfo">
+            <div class="useraccountinfo">
+                <div class="heading1">Privat Detailer</div>
+                <div class="userinformation"><b>Numm :</b>
+                    <div id="userpersonalname">John Pork</div>
+                </div><br>
+                <div class="userinformation"><b>E-mail :</b>
+                    <div id="usermail">johnporklover@porkmail.call</div>
+                </div>
+            </div>
+        </div>
+        <!-- =============================================================== -->
+        <!-- Public User Info : Account -->
+        <!-- =============================================================== -->
+        <div id="publicinfo">
+            <div class="useraccountinfo">
+                <div class="heading1">Öffentlech Detsiler</div>
+                <div class="userinformation"><b>Benotzernumm :</b>
+                    <div id="username">JohnPork69</div>
+                </div><br>
+                <div class="userinformation"><b>Ufanksdatum :</b>
+                    <div id="userdate">11/9/2001</div>
+                </div><br>
+                <div class="userinformation"><b>Plaz :</b>
+                    <div id="userrank">N/A</div>
+                </div>
+            </div>
+            <!-- =========================================================== -->
+            <!-- Public User Info : Game Stats -->
+            <!-- =========================================================== -->
+            <div class="usergameinfo">
+                <div class="heading1">Statistiken</div>
+                <div class="userinformation"><b>Spiller gespillt :</b>
+                    <div id="usergamestarted">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Moyenne un Punkten :</b>
+                    <div id="useraverage">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Ratio :</b>
+                    <div class="ratio">
+                        <p id="ratioP">N</p> / <p id="ratioN">A</p>
+                    </div>
+                </div><br>
+                <div class="userinformation"><b>Bescht Streak :</b>
+                    <div id="userbest">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Läscht Streak :</b>
+                    <div id="userlast">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Spiller pro Dag :</b>
+                    <div id="userdaily">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Verbesserungs Trend :</b>
+                    <div id="userimprovement">N/A</div>
+                </div><br>
+            </div>
+            <!-- =========================================================== -->
+            <!-- Public User Info : Achievements -->
+            <!-- =========================================================== -->
+            <div id="achievements">
+                <!-- =========================================================== -->
+                <!-- (coming soon) -->
+                <!-- =========================================================== -->
+            </div>
+            <!-- =============================================================== -->
+            <!-- Public User Info : Graph -->
+            <!-- =============================================================== -->
+            <div id="usergraph">
+                <!-- ADD USER GRAPH HERE (I'll style it) -->
+            </div>
+        </div>
+        <button class="ready" onclick="swapToDiv('#main-menu')">Zeréck</button>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Scripts -->
+    <!-- =================================================================== -->
+    <script src="../../../script/GameScript/GS_MenuSwapSection.js"></script>
+    <script src="../../../script/GameScript/GS_Leaderboard.js"></script>
+
+</body>
+
+</html>

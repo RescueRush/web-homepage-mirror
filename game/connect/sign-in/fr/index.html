@@ -1,0 +1,194 @@
+
+<html lang="lb">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup -->
+    <!-- =================================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Homepage</title>
+    <link rel="icon" href="../../../../favicon.ico" type="image/x-icon">
+
+    <!-- =================================================================== -->
+    <!-- Background -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('../../../../images/background/Background_Contact.webp');
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="../../../../prerequisites/excon.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="../../../../prerequisites/bootstrap.js"></script>
+    <link href="../../../../styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="../../../../styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="../../../../styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="../../../../styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_Cursor.css">
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_Language.css">
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_Connect.css">
+    <link rel="stylesheet" href="../../../../styles/Base_Styles/Style_TextBlock.css">
+
+    <!--jQuery Scripts-->
+    <script src="../../../../prerequisites/jquery.js"></script>
+
+    <!--Cookies Scripts-->
+    <script src="../../../../script/ProjectSettings/PS_LanguageSelector.js"></script>
+    <script src="../../../../script/Util.js"></script>
+    <script src="../../../../script/User/LS_connect.js"></script>
+
+    <!--Pop-up Script-->
+    <script src="../../../../script/PopupSender.js"></script>
+</head>
+
+<body>
+   
+
+    <!-- =================================================================== -->
+    <!-- Header -->
+    <!-- =================================================================== -->
+    <header class="header">
+        <div class="left-elements">
+            <a href="../../../../" id="scrolltotop" class="icon-link" title="Visit Rescue Rush">
+                <img src="../../../../images/Logo/I_LogoTransparentSquare.webp" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- Language Selector -->
+        <!-- =============================================================== -->
+        <div class="right-elements">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle">
+                    <img src="../../../../images/Flags/I_WireframeGlobe.webp" alt="Dropdown Icon" class="dropdown-icon">
+                </label>
+                <div class="dropdown-content">
+                    <a href="../../../../" data-lang="en">
+                        <img src="../../../../images/Flags/S_Lang-EN.svg" alt="English">
+                        <p class="text4">English</p>
+                    </a>
+                    <a href="../../../../lu/" data-lang="lu">
+                        <img src="../../../../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                        <p class="text4">Lëtzebuergesch</p>
+                    </a>
+                    <a href="../../../../fr/" data-lang="fr">
+                        <img src="../../../../images/Flags/S_Lang-FR.svg" alt="Français">
+                        <p class="text4">Français</p>
+                    </a>
+                    <a href="../../../../de/" data-lang="de">
+                        <img src="../../../../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                        <p class="text4">Deutsch</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- Content -->
+    <!-- =================================================================== -->
+    <div id="main">
+        <div class="center-elements">
+            <div id="textblock" class="content">
+                <p id="content">
+
+                <p class="Heading2">
+                </p>
+
+                <span class="Heading1">Se connecter</span>
+                <div class="Text" id="content">
+                    <form onsubmit="submitLoginForm(event)" id="login-form">
+                        <label for="name" class="text4">
+                            <b>Nom d'utilisateur :</b>
+                        </label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="password" class="text4">
+                            <span><b>Mot de passe :</b></span>
+                        </label><br>
+                        <input type="password" id="password" name="password" required><br><br>
+                        <a href="../../password-forgotten/" class="text4" id="forgot-password-link">Mot de passe oublié
+                            ?</a><br><br>
+                        <a href="../../register/" class="text4" id="register-instead-link">S'inscrire à la
+                            place</a><br><br>
+                        <button class="button2" type="submit">Connexion</button>
+                        <p id="reason-status"></p>
+                    </form>
+                </div>
+
+                <script>
+                    async function submitLoginForm(event) {
+                        event.preventDefault();
+                        try {
+                            loginRaw(document.getElementById("name").value, document.getElementById("password").value);
+                        } catch (error) {
+                            newPopup("Échec de la connexion 🚫. Veuillez réessayer 🔄.", "Fermer");
+                        }
+                    }
+                </script>
+
+                </p>
+            </div>
+            </p>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Footer -->
+    <!-- =================================================================== -->
+    <footer class="footer">
+        <div class="left-elements">
+            <p class="heading3">
+                Conditions d'utilisation
+            </p>
+            <a href="../../../../ToS/" class="text4">
+                <p>
+                    Conditions de service
+                </p>
+            </a>
+            <a href="../../../../privacy-policy/" class="text4">
+                <p>
+                    Politique de confidentialité
+                </p>
+            </a>
+            <a href="../../../../responsibility-disclaimer/" class="text4">
+                <p>
+                    Avertissement de responsabilité
+                </p>
+            </a>
+            <a href="../../../../gdpr/" class="text4">
+                <p>
+                    Conditions RGPD
+                </p>
+            </a>
+        </div>
+        <div class="right-elements">
+            <a href="https://www.instagram.com/rescue.rush/" target="_blank" class="icon-link"
+                title="Visit our Instagram">
+                <img src="../../../../images/Socials/I_Instagram.webp" class="icon">
+            </a>
+            <a href="https://github.com/RescueRush/" target="_blank" class="icon-link" title="Visit our Github">
+                <img src="../../../../images/Socials/S_Github.svg" class="icon">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

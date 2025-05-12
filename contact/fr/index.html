@@ -1,0 +1,202 @@
+<html lang="fr">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup -->
+    <!-- =================================================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Contact</title>
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- =================================================================== -->
+    <!-- Background -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('../../images/background/Background_Contact.webp');
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="../../prerequisites/excon.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="../../prerequisites/bootstrap.js"></script>
+    <link href="../../styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="../../styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="../../styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="../../styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Cursor.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Contact.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Language.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_TextBlock.css">
+
+    <!--jQuery Scripts-->
+    <script src="../../prerequisites/jquery.js"></script>
+
+    <!--Cursor Scripts-->
+    <script src="../../script/ProjectSettings/Cursor/PS_Cursor.js"></script>
+    <script src="../../script/ProjectSettings/Cursor/PS_CursorInteraction.js"></script>
+
+    <!--Cookies Scripts-->
+    <script src="../../script/ProjectSettings/PS_LanguageSelector.js"></script>
+    <script src="../../script/Util.js"></script>
+    <script src="../../script/PopupSender.js"></script>
+</head>
+
+<body>
+    <!-- =================================================================== -->
+    <!-- Custom Cursor -->
+    <!-- =================================================================== -->
+    <div id="custom-cursor"></div>
+
+    <!-- =================================================================== -->
+    <!-- Header -->
+    <!-- =================================================================== -->
+    <header class="header">
+        <div class="left-elements">
+            <a href="../../../../" id="scrolltotop" class="icon-link" title="Visit Rescue Rush">
+                <img src="../../images/Logo/I_LogoTransparentSquare.webp" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- Language Selector -->
+        <!-- =============================================================== -->
+        <div class="right-elements">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle">
+                    <img src="../../images/Flags/I_WireframeGlobe.webp" alt="Dropdown Icon" class="dropdown-icon">
+                </label>
+                <div class="dropdown-content">
+                    <a href="../" data-lang="en">
+                        <img src="../../images/Flags/S_Lang-EN.svg" alt="English">
+                        <p class="text4">English</p>
+                    </a>
+                    <a href="../" data-lang="lu">
+                        <img src="../../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                        <p class="text4">Lëtzebuergesch</p>
+                    </a>
+                    <a href="../" data-lang="fr">
+                        <img src="../../images/Flags/S_Lang-FR.svg" alt="Français">
+                        <p class="text4">Français</p>
+                    </a>
+                    <a href="../" data-lang="de">
+                        <img src="../../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                        <p class="text4">Deutsch</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- Contact-Form -->
+    <!-- =================================================================== -->
+    <main id="main">
+        <div class="center-elements">
+            <div id="textblock" class="content">
+                <p id="content">
+                <p class="Heading2"><!--Leave that there for the looks -->
+
+
+
+
+                </p>
+                <span class="Heading1">FORMULAIRE DE CONTACT </span>
+                <div class="Text" id="content">
+                    <form onsubmit="submitSupportForm(event)" id="contact-form">
+                        <label for="name">
+                            <b>Nom ou Pseudo :</b>
+                        </label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="email">
+                            <b>Adresse e-mail :</b>
+                        </label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                        <label for="message">
+                            <b>Message :</b>
+                        </label><br>
+                        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                        <button class="button2" type="submit">
+                            Envoyer
+                        </button>
+                    </form>
+                    <script>
+                        async function submitSupportForm(event) {
+                            event.preventDefault();
+                            try {
+                                let response = await request('POST', "/support/form/submit", { name: document.getElementById("name").value, email: document.getElementById("email").value, message: document.getElementById("message").value, lang: "de" });
+                                if (response.ok) {
+                                    newPopup("<b>Merci !</b> 📨 Nous vous répondrons dans les plus brefs délais !", "<a href=\"../../fr/\">Retour à la Homepage</a>");
+                                } else {
+                                    if (response.status == 400) {
+                                        newPopup("<b>Erreur</b> 📨 Veuillez saisir une adresse e-mail valide", "Ok");
+                                    } else {
+                                        newPopup("<b>Erreur</b> 📨 Veuillez réessayer plus tard svp. !<br>" + data.error + " (" + response.status + ")", "Ok");
+                                    }
+                                }
+                            } catch (err) {
+                                newPopup("<b>Erreur</b> 📨 Veuillez réessayer plus tard svp. ! ", "Ok");
+                            }
+                        }
+                    </script>
+                </div>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- =================================================================== -->
+    <!-- Footer -->
+    <!-- =================================================================== -->
+    <footer class="Footer">
+        <div class="left-elements">
+            <p class="Heading3" id="content">
+                Conditions d'utilisation
+                <a href="../../ToS" class="text4">
+                    <p id="content">
+                        Conditions de service
+                    </p>
+                </a>
+                <a href="../../privacy-policy" class="text4" id="content">
+                    <p id="content">
+                        Politique de confidentialité
+                    </p>
+                </a>
+                <a href="../../responsibility-disclaimer" class="text4" id="content">
+                    <p id="content">
+                        Avertissement de responsabilité
+                    </p>
+                </a>
+                <a href="../../gpdr" class="text4" id="content">
+                    <p id="content">
+                        Conditions RGPD
+                    </p>
+                </a>
+        </div>
+        <div class="right-elements">
+            <a href="https://www.instagram.com/rescue.rush/" target="_blank" class="icon-link"
+                title="Visit our Instagram">
+                <img src="../../images/Socials/I_Instagram.webp" class="icon">
+            </a>
+            <a href="https://github.com/RescueRush/" target="_blank" class="icon-link" title="Visit our Github">
+                <img src="../../images/Socials/S_Github.svg" class="icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+
+<html lang="en">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup  -->
+    <!-- =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Game Menu</title>
+
+    <!-- =================================================================== -->
+    <!-- Background Images -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('../../images/background/Background_Game.webp');
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="../../prerequisites/excon.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="../../prerequisites/bootstrap.js"></script>
+    <link href="../../styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="../../styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="../../styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="../../styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="../../styles/Base_Styles/Style_Language.css">
+
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Button.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_GameModes.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Leaderboard.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Home.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Header.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Scenario.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Phone.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Particles.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Explanation.css">
+    <link rel="stylesheet" href="../../styles/GameStyles/GameStyle_Hint.css">
+
+    <!--jQuery Script -->
+    <script src="../../prerequisites/jquery.js"></script>
+
+    <!--Cookies Script -->
+    <script src="../../script/Util.js"></script>
+    <script src="../../script/WS.js"></script>
+
+    <!--Pop-up Script -->
+    <script src="../../script/PopupSender.js"></script>
+
+    <!-- Hint Script -->
+    <script src="../../script/GameScript/GS_Hint.js"></script>
+</head>
+
+<body>
+    <!-- Generic Header -->
+    <div class="Header">
+
+        <div class="left-elements">
+            <a href="../menu/" id="scrollToTop" class="icon-link" title="Back to Game Menu">
+                <img src="../../images/Logo/I_LogoTransparentSquare.webp" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+        <img class="rushLogo1Line" src="../../images/Logo/S_NameOneLine.svg">
+        <div class="right-elements">
+            <div class="dropdown">
+                <button class="hintBox" title="Card Explanations" onclick="showMaterialList()">
+                    <img src="../../images/cardicon/materials.webp" alt="Hint" class="dropdown-icon"> </button>
+            </div>
+            <a href="../menu/" title="Disconnect">
+                <button class="exit-button">
+                    <img src="../../../images/Icons/Disconnect.webp" class="logger-icon">
+                </button>
+            </a>
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="materialList"></div>
+
+    <!-- Special Content -->
+    <div id="mainCasual">
+        <div class="above_placer">
+            <div id="scorebox">
+                <p id="Score">Score : <span id="value"></span></p>
+                <p id="Multiplier">Multiplier : <span id="value"></span>x</p>
+                <p id="Streak">Streak : <span id="value"></span></p>
+            </div>
+            <div id="questionbox">
+                <p id="question">Question ?</p>
+            </div>
+
+            <button id="answer-btn" class="notready">VERIFY</button>
+            <button id="next-question-btn" class="hidden">NEXT</button>
+
+        </div>
+        <div id="cardscontainer">
+            <btn class="answeroption" id="answer0">1</btn>
+            <btn class="answeroption" id="answer1">2</btn>
+            <btn class="answeroption" id="answer2">3</btn>
+        </div>
+
+
+        <!-- =================================================================== -->
+        <!-- Menu Scripts -->
+        <!-- =================================================================== -->
+        <script src="../../script/GameScript/GS_Quiz.js"></script>
+        <script src="../../script/GameScript/GS_GameQuiz.js"></script>
+
+</body>
+
+</html>

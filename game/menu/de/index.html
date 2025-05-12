@@ -1,0 +1,263 @@
+<html lang="en">
+
+<head>
+    <!-- =================================================================== -->
+    <!-- Setup  -->
+    <!-- =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueRush - Menü</title>
+
+    <!-- =================================================================== -->
+    <!-- Background Images -->
+    <!-- =================================================================== -->
+
+    <style>
+        body {
+            background-image: url('../../../images/background/Background_GameMenu.webp');
+
+        }
+    </style>
+
+    <!-- =================================================================== -->
+    <!-- Stylesheets  &  Javascripts -->
+    <!-- =================================================================== -->
+    <link rel="stylesheet" href="../../../prerequisites/excon.css">
+
+    <!-- Bootstrap & Sass-->
+    <script src="../../../prerequisites/bootstrap.js"></script>
+    <link href="../../../styles/Bootstrap/BTS_Banners.scss" rel="stylesheet">
+    <link href="../../../styles/Bootstrap/BTS_Buttons.scss" rel="stylesheet">
+    <link href="../../../styles/Bootstrap/BTS_General.scss" rel="stylesheet">
+    <link href="../../../styles/Bootstrap/BTS_Homepage.scss" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Animation.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Banners.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Buttons.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Global.css">
+    <link rel="stylesheet" href="../../../styles/Base_Styles/Style_Language.css">
+
+
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Button.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Leaderboard.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Home.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Header.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Intro.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Profile.css">
+    <link rel="stylesheet" href="../../../styles/GameStyles/GameStyle_Menu.css">
+
+    <!--jQuery Scripts-->
+    <script src="../../../prerequisites/jquery.js"></script>
+
+    <!--Cookies Scripts-->
+    <script src="../../../script/Util.js"></script>
+
+    <!--Pop-up Script-->
+    <script src="../../../script/PopupSender.js"></script>
+</head>
+
+<body>
+    <!-- =================================================================== -->
+    <!-- Header -->
+    <!-- =================================================================== -->
+    <header class="header">
+        <div class="left-elements">
+            <a href="../../../" id="scrolltotop" class="icon-link" title="Home">
+                <img src="../../../images/Logo/I_LogoTransparentSquare.webp" alt="Rescue Rush" class="icon">
+            </a>
+        </div>
+
+
+        <!-- =============================================================== -->
+        <!-- Language Selector -->
+        <!-- =============================================================== -->
+        <div class="right-elements">
+            <div class="dropdown">
+                <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                <label for="dropdown-toggle">
+                    <img src="../../../images/Flags/I_WireframeGlobe.webp" alt="Dropdown Icon" class="dropdown-icon"
+                        title="Sprache Wechseln">
+                </label>
+                <div class="dropdown-content">
+                    <a href="../en" data-lang="en">
+                        <img src="../../../images/Flags/S_Lang-EN.svg" alt="English">
+                        <p class="text4">English</p>
+                    </a>
+                    <a href="../lu/" data-lang="lu">
+                        <img src="../../../images/Flags/S_Lang-LUX.svg" alt="Lëtzebuergesch">
+                        <p class="text4">Lëtzebuergesch</p>
+                    </a>
+                    <a href="../fr/" data-lang="fr">
+                        <img src="../../../images/Flags/S_Lang-FR.svg" alt="Français">
+                        <p class="text4">Français</p>
+                    </a>
+                    <a href="../de/" data-lang="de">
+                        <img src="../../../images/Flags/S_Lang-DE.svg" alt="Deutsch">
+                        <p class="text4">Deutsch</p>
+                    </a>
+                </div>
+            </div>
+            <a href="../../connect/" title="Disconnect">
+                <button class="exit-button">
+                    <img src="../../../images/Icons/Disconnect.webp" class="logger-icon">
+                </button>
+            </a>
+        </div>
+    </header>
+
+    <!-- =================================================================== -->
+    <!-- Introduction Screen -->
+    <!-- =================================================================== -->
+    <div id="intro">
+        <img src="../../../images/Logo/S_NameOneLine.svg" class="textRRBanner">
+        </img>
+        <div id="logostarter">
+            <img src="../../../images/Logo/I_LogoTransparentSquare.webp" class="logoAmbulanceBig-mobile">
+            <img src="../../../images/Logo/S_LogoAmbulance.svg" class="logoAmbulanceBig">
+        </div>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Main Menu onclick="swapToDiv('#profile')" -->
+    <!-- =================================================================== -->
+    <div id="main-menu">
+        <img src="../../../images/Logo/S_NameTwoLine.svg" class="textRRBanner2">
+        </img>
+        <button class="ready" onclick="swapToDiv('#game-menu')">🎮 Spielmodus</button>
+        <button class="ready" onclick="swapToDiv('#leaderboard')">🏆 Leaderboard</button>
+        <button class="notready">👤 Profil</button>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Game Selector Otion Menu -->
+    <!-- =================================================================== -->
+    <div id="game-menu">
+        <div class="heading5">🎮 Spielmodus</div>
+        <a href="../../scenario/"><button class="ready">Szenario</button></a>
+        <button class="notready">Quiz</button>
+        <button
+            class="notready">Geheimer Modus</button>
+        <button class="ready" onclick="swapToDiv('#main-menu')">Exit</button>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Leaderboard -->
+    <!-- =================================================================== -->
+    <div id="leaderboard">
+        <div class="heading5">🏆 Leaderboard </div>
+        <div class="ranker">
+            <div id="top1" class="rankbar">
+                <p id="userrank1">1.</p>
+                <p id="usern1">USER#001</p>
+                <p id="usern1score">Punkte : 10800</p>
+            </div>
+            <div id="top2" class="rankbar">
+                <p id="userrank2">2.</p>
+                <p id="usern2">USER#002</p>
+                <p id="usern2score">Punkte : 3040</p>
+            </div>
+            <div id="top3" class="rankbar">
+                <p id="userrank3">3.</p>
+                <p id="usern3">USER#003</p>
+                <p id="usern3score">Punkte : 1270</p>
+            </div>
+            <div id="top4" class="rankbar">
+                <p id="userrank4">4.</p>
+                <p id="usern4">USER#004</p>
+                <p id="usern4score">Punkte : 1050</p>
+            </div>
+            <div id="top5" class="rankbar">
+                <p id="userrank5">5.</p>
+                <p id="usern5">USER#005</p>
+                <p id="usern5score">Punkte : 970</p>
+            </div>
+        </div>
+        <button class="ready" onclick="swapToDiv('#main-menu')">Zurück</button>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Profile -->
+    <!-- =================================================================== -->
+    <div id="profile" class="hidden">
+        <!-- =============================================================== -->
+        <!-- Personal Information (To hide if inspecting a profile) -->
+        <!-- =============================================================== -->
+        <!--<div id="personalinfo">
+            <div class="useraccountinfo">
+                <div class="heading1">Private User Stats</div>
+                <div class="userinformation"><b>Name :</b><div id="userpersonalname">John Pork</div></div><br>
+                <div class="userinformation"><b>E-mail :</b><div id="usermail">johnporklover@porkmail.call</div></div>
+            </div>
+        </div>-->
+
+        <!-- =============================================================== -->
+        <!-- Public User Info : Account -->
+        <!-- =============================================================== -->
+        <div id="publicinfo">
+            <div class="useraccountinfo">
+                <div class="heading1">Öffentliche Daten</div>
+                <div class="userinformation"><b>Benutzername :</b>
+                    <div id="username">JohnPork69</div>
+                </div><br>
+                <!--<div class="userinformation"><b>Date Joined :</b><div id="userdate">11/9/2001</div></div><br>-->
+                <div class="userinformation"><b>Plazierung :</b>
+                    <div id="userrank">N/A</div>
+                </div>
+            </div>
+            <!-- =========================================================== -->
+            <!-- Public User Info : Game Stats -->
+            <!-- =========================================================== -->
+            <div class="usergameinfo">
+                <div class="heading1">Spielstatistiken</div>
+                <div class="userinformation"><b>Insgesamt gespielte Spiele :</b>
+                    <div id="usergamestarted">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Durchchnitss Punktezahl :</b>
+                    <div id="useraverage">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Ratio :</b>
+                    <div class="ratio">
+                        <p id="ratioP">N</p> / <p id="ratioN">A</p>
+                    </div>
+                </div><br>
+                <div class="userinformation"><b>Beste Streak :</b>
+                    <div id="userbest">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Letzte Streak :</b>
+                    <div id="userlast">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Täglich gespielte Spiele :</b>
+                    <div id="userdaily">N/A</div>
+                </div><br>
+                <div class="userinformation"><b>Verbesserungs Trend :</b>
+                    <div id="userimprovement">N/A</div>
+                </div><br>
+            </div>
+            <!-- =========================================================== -->
+            <!-- Public User Info : Achievements -->
+            <!-- =========================================================== -->
+            <div id="achievements">
+                <!-- =========================================================== -->
+                <!-- (coming soon) -->
+                <!-- =========================================================== -->
+            </div>
+            <!-- =============================================================== -->
+            <!-- Public User Info : Graph -->
+            <!-- =============================================================== -->
+            <div id="usergraph">
+                <!-- ADD USER GRAPH HERE (I'll style it) -->
+            </div>
+        </div>
+        <button class="ready" onclick="swapToDiv('#main-menu')">Zurück</button>
+    </div>
+
+    <!-- =================================================================== -->
+    <!-- Scripts -->
+    <!-- =================================================================== -->
+    <script src="../../../script/GameScript/GS_MenuSwapSection.js"></script>
+    <script src="../../../script/GameScript/GS_Leaderboard.js"></script>
+
+</body>
+
+</html>

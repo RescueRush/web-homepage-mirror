@@ -1,0 +1,213 @@
+/* ========================================================================== */
+/* Header */
+/* ========================================================================== */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100dvw;
+    height: 12dvh;
+    z-index: 1000;
+
+    background: linear-gradient(90deg, rgba(7, 100, 151, 0.65) -17.06%, rgba(187, 7, 7, 0.65) 160.35%);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    display: none;
+}
+
+.dropdown:hover .dropdown-icon {
+    filter: brightness(50%) contrast(120%);
+}
+
+.dropdown-icon {
+    margin-right: 50px;
+    padding: 5px;
+    width: auto;
+    height: 30%;
+    max-width: 30px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 12px;
+    background: radial-gradient(farthest-corner at 100% 50%, rgba(0, 0, 0, 1), rgba(18, 18, 18, 0.7));
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    padding: 10px 0;
+    right: 24px;
+    top: 250%;
+}
+
+.dropdown-toggle:checked~.dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    border-radius: 6px;
+    margin: 10px;
+    color: black;
+    padding: 10px 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    max-height: 24px;
+}
+
+.dropdown-content a img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.dropdown .text4 {
+    margin-left: 12px;
+    padding: 0;
+}
+
+/* ========================================================================== */
+/* Footer */
+/* ========================================================================== */
+
+.footer {
+    width: 100dvw !important;
+    height: var(--footersize);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 10px;
+
+    background: var(--footercolor);
+    background-color: black;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    backdrop-filter: blur(2px);
+    gap: var(--footergap);
+
+
+
+    position: relative;
+
+
+}
+
+.footer .left-elements {
+    margin: 5dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer .left-elements .heading3 {
+    margin-bottom: 10%;
+}
+
+.footer .left-elements .text4 {
+    margin-bottom: 3px;
+    height: auto;
+    text-align: left;
+    display: block;
+    width: 100%;
+    word-wrap: break-word;
+    transition: all 0.3s ease;
+}
+
+.footer .left-elements .text4:hover {
+    color: gray;
+    transform: scale(1.05);
+}
+
+.footer .right-elements {
+    margin-top: 100px !important;
+    margin-right: 100px !important;
+}
+
+.footer .right-elements .icon {
+    height: 50px;
+    width: 50px;
+}
+
+@media (max-width: 1100px) {
+    .footer .right-elements {
+        margin-right: 10px;
+    }
+
+    .footer {
+        /* width: 100dvw; */
+        height: var(--footersize);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        /* padding: 30px; */
+        padding: 30px 50px;
+        /* border: 2px solid red; */
+
+        background: var(--footercolor);
+        background-color: black;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        backdrop-filter: blur(2px);
+        /* gap: var(--footergap); */
+
+        /* position: relative; */
+    }
+
+     
+     .footer .right-elements {
+        /* border: 2px solid red; */
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block;
+        position: unset !important;
+        text-align: left !important;
+    }
+
+    .footer .right-elements {
+        margin-right: 36px !important;
+    }
+
+    .footer .left-elements .heading3 {
+        margin-bottom: 10px;
+    }
+
+    .footer .right-elements .icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    @media (max-width: 500px) {
+        .footer {
+            padding: 30px 20px;
+        }
+
+        .footer .right-elements {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+}
